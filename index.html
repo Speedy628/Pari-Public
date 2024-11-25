@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pari Libre Entre Amis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pari Libre Entre Amis</h1>
+        <p>Créez, participez et amusez-vous !</p>
+    </header>
+
+    <main>
+        <section id="create-bet">
+            <h2>Créer un Pari</h2>
+            <form id="bet-form">
+                <label for="bet-name">Nom du Pari :</label>
+                <input type="text" id="bet-name" placeholder="Exemple : Qui gagnera le prochain match ?" required>
+                
+                <label for="participants">Participants :</label>
+                <input type="text" id="participants" placeholder="Listez les noms séparés par des virgules" required>
+                
+                <label for="bet-deadline">Date Limite :</label>
+                <input type="date" id="bet-deadline" required>
+                
+                <button type="submit">Créer le Pari</button>
+            </form>
+        </section>
+
+        <section id="bet-list">
+            <h2>Liste des Paris</h2>
+            <ul id="bet-items">
+                <!-- Les paris ajoutés apparaîtront ici -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Pari Libre - Amusez-vous de manière responsable !</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
